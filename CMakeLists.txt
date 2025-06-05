@@ -4,12 +4,12 @@ project(carros C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(carros
-        main.c
+        src/main.c
         src/p1.c
         src/p2.c
         src/tree.c
         src/list.c
         src/utils.c
-        lista_ano.c
+        src/year_list.c
         include/year_list.h
 )

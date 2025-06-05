@@ -22,7 +22,7 @@ TreeNode* insertTree(TreeNode* root, float key, Car* car) {
 }
 
 char * km(void) {
-    return "Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n";
+    return "Brand: %s | Model: %s | Year: %d | km: %d | Price: %.2f\n";
 }
 
 void searchInterval(TreeNode* root, float min, float max) {
