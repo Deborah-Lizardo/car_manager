@@ -1,6 +1,5 @@
 #ifndef LIST_H
 #define LIST_H
-
 #include "car.h"
 
 typedef struct Node {
