@@ -4,29 +4,29 @@
 		"generator" : 
 		{
 			"multiConfig" : false,
-			"name" : "Ninja"
+			"name" : "MinGW Makefiles"
 		},
 		"paths" : 
 		{
 			"cmake" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/bin/cmake.exe",
 			"cpack" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/bin/cpack.exe",
 			"ctest" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/bin/ctest.exe",
-			"root" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/share/cmake-3.30"
+			"root" : "C:/Program Files/JetBrains/CLion 2024.3.3/bin/cmake/win/x64/share/cmake-3.31"
 		},
 		"version" : 
 		{
 			"isDirty" : false,
 			"major" : 3,
-			"minor" : 30,
-			"patch" : 5,
-			"string" : "3.30.5",
+			"minor" : 31,
+			"patch" : 6,
+			"string" : "3.31.6",
 			"suffix" : ""
 		}
 	},
 	"objects" : 
 	[
 		{
-			"jsonFile" : "codemodel-v2-2f4c6c7b2f9bedbbc508.json",
+			"jsonFile" : "codemodel-v2-2e2dc41ba55f46e3ce22.json",
 			"kind" : "codemodel",
 			"version" : 
 			{
@@ -35,7 +35,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cache-v2-cd7cabee6a00c62eadf9.json",
+			"jsonFile" : "cache-v2-1207100425eff341b190.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -44,7 +44,7 @@
 			}
 		},
 		{
-			"jsonFile" : "cmakeFiles-v1-b824d50f1d003260271c.json",
+			"jsonFile" : "cmakeFiles-v1-d005d12f7e5c53c3dd05.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -66,7 +66,7 @@
 	{
 		"cache-v2" : 
 		{
-			"jsonFile" : "cache-v2-cd7cabee6a00c62eadf9.json",
+			"jsonFile" : "cache-v2-1207100425eff341b190.json",
 			"kind" : "cache",
 			"version" : 
 			{
@@ -76,7 +76,7 @@
 		},
 		"cmakeFiles-v1" : 
 		{
-			"jsonFile" : "cmakeFiles-v1-b824d50f1d003260271c.json",
+			"jsonFile" : "cmakeFiles-v1-d005d12f7e5c53c3dd05.json",
 			"kind" : "cmakeFiles",
 			"version" : 
 			{
@@ -86,7 +86,7 @@
 		},
 		"codemodel-v2" : 
 		{
-			"jsonFile" : "codemodel-v2-2f4c6c7b2f9bedbbc508.json",
+			"jsonFile" : "codemodel-v2-2e2dc41ba55f46e3ce22.json",
 			"kind" : "codemodel",
 			"version" : 
 			{

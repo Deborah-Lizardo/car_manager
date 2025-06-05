@@ -1,66 +1,71 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "lista_ano.h"
+#include "include/year_list.h"
 
-NoAno* inserir_ano(NoAno* lista, int ano, Carro* carro) {
-    NoAno* atual = lista;
-    NoAno* anterior = NULL;
+YearNode* insertYear(YearNode* list, int year, Car* car) {
+    YearNode* current = list;
+    YearNode* previous = NULL;
 
-    while (atual != NULL && atual->ano < ano) {
-        anterior = atual;
-        atual = atual->prox;
+    // Find the correct position or existing year node
+    while (current != NULL && current->year < year) {
+        previous = current;
+        current = current->next;
     }
 
-    if (atual != NULL && atual->ano == ano) {
-        NoCarroAno* novoCarro = malloc(sizeof(NoCarroAno));
-        novoCarro->carro = carro;
-        novoCarro->prox = atual->listaCarros;
-        atual->listaCarros = novoCarro;
-        return lista;
+    // If the year already exists, add the car to its car list
+    if (current != NULL && current->year == year) {
+        YearCarNode* newCarNode = malloc(sizeof(YearCarNode));
+        newCarNode->car = car;
+        newCarNode->next = current->carList;
+        current->carList = newCarNode;
+        return list;
     }
 
-    NoAno* novoAno = malloc(sizeof(NoAno));
-    novoAno->ano = ano;
-    novoAno->listaCarros = NULL;
-    novoAno->prox = atual;
+    // Create a new year node
+    YearNode* newYearNode = malloc(sizeof(YearNode));
+    newYearNode->year = year;
+    newYearNode->carList = NULL;
+    newYearNode->next = current;
 
-    NoCarroAno* novoCarro = malloc(sizeof(NoCarroAno));
-    novoCarro->carro = carro;
-    novoCarro->prox = NULL;
-    novoAno->listaCarros = novoCarro;
+    // Create the first car node for this year
+    YearCarNode* newCarNode = malloc(sizeof(YearCarNode));
+    newCarNode->car = car;
+    newCarNode->next = NULL;
+    newYearNode->carList = newCarNode;
 
-    if (anterior == NULL) {
-        return novoAno;
+    if (previous == NULL) {
+        // Insert at the beginning of the list
+        return newYearNode;
     } else {
-        anterior->prox = novoAno;
-        return lista;
+        previous->next = newYearNode;
+        return list;
     }
 }
 
-void exibir_carros_por_ano(NoAno* lista, int ano_minimo) {
-    while (lista != NULL) {
-        if (lista->ano >= ano_minimo) {
-            NoCarroAno* no = lista->listaCarros;
-            while (no != NULL) {
-                Carro* c = no->carro;
-                printf("Marca: %s | Modelo: %s | Ano: %d | Km: %d | Preço: %.2f\n",
-                       c->marca, c->modelo, c->ano, c->km, c->preco);
-                no = no->prox;
+void displayCarsFromYear(YearNode* list, int minYear) {
+    while (list != NULL) {
+        if (list->year >= minYear) {
+            YearCarNode* node = list->carList;
+            while (node != NULL) {
+                Car* c = node->car;
+                printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
+                       c->brand, c->model, c->year, c->mileage, c->price);
+                node = node->next;
             }
         }
-        lista = lista->prox;
+        list = list->next;
     }
 }
 
-void liberar_lista_ano(NoAno* lista) {
-    while (lista != NULL) {
-        NoAno* temp = lista;
-        lista = lista->prox;
+void freeYearList(YearNode* list) {
+    while (list != NULL) {
+        YearNode* temp = list;
+        list = list->next;
 
-        NoCarroAno* no = temp->listaCarros;
-        while (no != NULL) {
-            NoCarroAno* aux = no;
-            no = no->prox;
+        YearCarNode* node = temp->carList;
+        while (node != NULL) {
+            YearCarNode* aux = node;
+            node = node->next;
             free(aux);
         }
 

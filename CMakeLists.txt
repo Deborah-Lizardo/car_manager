@@ -5,11 +5,11 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(carros
         main.c
-        p1.c
-        p2.c
-        arvore.c
-        lista.c
-        utils.c
+        src/p1.c
+        src/p2.c
+        src/tree.c
+        src/list.c
+        src/utils.c
         lista_ano.c
-        lista_ano.h
+        include/year_list.h
 )
