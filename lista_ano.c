@@ -49,7 +49,7 @@ void displayCarsFromYear(YearNode* list, int minYear) {
             while (node != NULL) {
                 Car* c = node->car;
                 printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
-                       c->brand, c->model, c->year, c->mileage, c->price);
+                       c->brand, c->model, c->year, c->km, c->price);
                 node = node->next;
             }
         }

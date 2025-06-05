@@ -21,6 +21,10 @@ TreeNode* insertTree(TreeNode* root, float key, Car* car) {
     return root;
 }
 
+char * km(void) {
+    return "Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n";
+}
+
 void searchInterval(TreeNode* root, float min, float max) {
     if (root == NULL)
         return;
@@ -29,9 +33,9 @@ void searchInterval(TreeNode* root, float min, float max) {
         searchInterval(root->left, min, max);
 
     if (root->key >= min && root->key <= max) {
-        printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
+        printf(km(),
                root->car->brand, root->car->model,
-               root->car->year, root->car->mileage, root->car->price);
+               root->car->year, root->car->km, root->car->price);
     }
 
     if (root->key <= max)

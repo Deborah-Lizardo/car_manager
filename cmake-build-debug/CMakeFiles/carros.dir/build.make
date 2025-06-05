@@ -85,75 +85,75 @@ CMakeFiles/carros.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/main.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\main.c -o CMakeFiles\carros.dir\main.c.s
 
-CMakeFiles/carros.dir/p1.c.obj: CMakeFiles/carros.dir/flags.make
-CMakeFiles/carros.dir/p1.c.obj: C:/Users/Deborah/c_project/p1.c
-CMakeFiles/carros.dir/p1.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/carros.dir/p1.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/p1.c.obj -MF CMakeFiles\carros.dir\p1.c.obj.d -o CMakeFiles\carros.dir\p1.c.obj -c C:\Users\Deborah\c_project\p1.c
+CMakeFiles/carros.dir/src/p1.c.obj: CMakeFiles/carros.dir/flags.make
+CMakeFiles/carros.dir/src/p1.c.obj: C:/Users/Deborah/c_project/src/p1.c
+CMakeFiles/carros.dir/src/p1.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/carros.dir/src/p1.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/src/p1.c.obj -MF CMakeFiles\carros.dir\src\p1.c.obj.d -o CMakeFiles\carros.dir\src\p1.c.obj -c C:\Users\Deborah\c_project\src\p1.c
 
-CMakeFiles/carros.dir/p1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/p1.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\p1.c > CMakeFiles\carros.dir\p1.c.i
+CMakeFiles/carros.dir/src/p1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/src/p1.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\src\p1.c > CMakeFiles\carros.dir\src\p1.c.i
 
-CMakeFiles/carros.dir/p1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/p1.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\p1.c -o CMakeFiles\carros.dir\p1.c.s
+CMakeFiles/carros.dir/src/p1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/src/p1.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\src\p1.c -o CMakeFiles\carros.dir\src\p1.c.s
 
-CMakeFiles/carros.dir/p2.c.obj: CMakeFiles/carros.dir/flags.make
-CMakeFiles/carros.dir/p2.c.obj: C:/Users/Deborah/c_project/p2.c
-CMakeFiles/carros.dir/p2.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/carros.dir/p2.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/p2.c.obj -MF CMakeFiles\carros.dir\p2.c.obj.d -o CMakeFiles\carros.dir\p2.c.obj -c C:\Users\Deborah\c_project\p2.c
+CMakeFiles/carros.dir/src/p2.c.obj: CMakeFiles/carros.dir/flags.make
+CMakeFiles/carros.dir/src/p2.c.obj: C:/Users/Deborah/c_project/src/p2.c
+CMakeFiles/carros.dir/src/p2.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/carros.dir/src/p2.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/src/p2.c.obj -MF CMakeFiles\carros.dir\src\p2.c.obj.d -o CMakeFiles\carros.dir\src\p2.c.obj -c C:\Users\Deborah\c_project\src\p2.c
 
-CMakeFiles/carros.dir/p2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/p2.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\p2.c > CMakeFiles\carros.dir\p2.c.i
+CMakeFiles/carros.dir/src/p2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/src/p2.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\src\p2.c > CMakeFiles\carros.dir\src\p2.c.i
 
-CMakeFiles/carros.dir/p2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/p2.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\p2.c -o CMakeFiles\carros.dir\p2.c.s
+CMakeFiles/carros.dir/src/p2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/src/p2.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\src\p2.c -o CMakeFiles\carros.dir\src\p2.c.s
 
-CMakeFiles/carros.dir/arvore.c.obj: CMakeFiles/carros.dir/flags.make
-CMakeFiles/carros.dir/arvore.c.obj: C:/Users/Deborah/c_project/arvore.c
-CMakeFiles/carros.dir/arvore.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/carros.dir/arvore.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/arvore.c.obj -MF CMakeFiles\carros.dir\arvore.c.obj.d -o CMakeFiles\carros.dir\arvore.c.obj -c C:\Users\Deborah\c_project\arvore.c
+CMakeFiles/carros.dir/src/tree.c.obj: CMakeFiles/carros.dir/flags.make
+CMakeFiles/carros.dir/src/tree.c.obj: C:/Users/Deborah/c_project/src/tree.c
+CMakeFiles/carros.dir/src/tree.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/carros.dir/src/tree.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/src/tree.c.obj -MF CMakeFiles\carros.dir\src\tree.c.obj.d -o CMakeFiles\carros.dir\src\tree.c.obj -c C:\Users\Deborah\c_project\src\tree.c
 
-CMakeFiles/carros.dir/arvore.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/arvore.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\arvore.c > CMakeFiles\carros.dir\arvore.c.i
+CMakeFiles/carros.dir/src/tree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/src/tree.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\src\tree.c > CMakeFiles\carros.dir\src\tree.c.i
 
-CMakeFiles/carros.dir/arvore.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/arvore.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\arvore.c -o CMakeFiles\carros.dir\arvore.c.s
+CMakeFiles/carros.dir/src/tree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/src/tree.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\src\tree.c -o CMakeFiles\carros.dir\src\tree.c.s
 
-CMakeFiles/carros.dir/lista.c.obj: CMakeFiles/carros.dir/flags.make
-CMakeFiles/carros.dir/lista.c.obj: C:/Users/Deborah/c_project/lista.c
-CMakeFiles/carros.dir/lista.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/carros.dir/lista.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/lista.c.obj -MF CMakeFiles\carros.dir\lista.c.obj.d -o CMakeFiles\carros.dir\lista.c.obj -c C:\Users\Deborah\c_project\lista.c
+CMakeFiles/carros.dir/src/list.c.obj: CMakeFiles/carros.dir/flags.make
+CMakeFiles/carros.dir/src/list.c.obj: C:/Users/Deborah/c_project/src/list.c
+CMakeFiles/carros.dir/src/list.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/carros.dir/src/list.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/src/list.c.obj -MF CMakeFiles\carros.dir\src\list.c.obj.d -o CMakeFiles\carros.dir\src\list.c.obj -c C:\Users\Deborah\c_project\src\list.c
 
-CMakeFiles/carros.dir/lista.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/lista.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\lista.c > CMakeFiles\carros.dir\lista.c.i
+CMakeFiles/carros.dir/src/list.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/src/list.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\src\list.c > CMakeFiles\carros.dir\src\list.c.i
 
-CMakeFiles/carros.dir/lista.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/lista.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\lista.c -o CMakeFiles\carros.dir\lista.c.s
+CMakeFiles/carros.dir/src/list.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/src/list.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\src\list.c -o CMakeFiles\carros.dir\src\list.c.s
 
-CMakeFiles/carros.dir/utils.c.obj: CMakeFiles/carros.dir/flags.make
-CMakeFiles/carros.dir/utils.c.obj: C:/Users/Deborah/c_project/utils.c
-CMakeFiles/carros.dir/utils.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/carros.dir/utils.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/utils.c.obj -MF CMakeFiles\carros.dir\utils.c.obj.d -o CMakeFiles\carros.dir\utils.c.obj -c C:\Users\Deborah\c_project\utils.c
+CMakeFiles/carros.dir/src/utils.c.obj: CMakeFiles/carros.dir/flags.make
+CMakeFiles/carros.dir/src/utils.c.obj: C:/Users/Deborah/c_project/src/utils.c
+CMakeFiles/carros.dir/src/utils.c.obj: CMakeFiles/carros.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\c_project\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/carros.dir/src/utils.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/carros.dir/src/utils.c.obj -MF CMakeFiles\carros.dir\src\utils.c.obj.d -o CMakeFiles\carros.dir\src\utils.c.obj -c C:\Users\Deborah\c_project\src\utils.c
 
-CMakeFiles/carros.dir/utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/utils.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\utils.c > CMakeFiles\carros.dir\utils.c.i
+CMakeFiles/carros.dir/src/utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/carros.dir/src/utils.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\c_project\src\utils.c > CMakeFiles\carros.dir\src\utils.c.i
 
-CMakeFiles/carros.dir/utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/utils.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\utils.c -o CMakeFiles\carros.dir\utils.c.s
+CMakeFiles/carros.dir/src/utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/carros.dir/src/utils.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\c_project\src\utils.c -o CMakeFiles\carros.dir\src\utils.c.s
 
 CMakeFiles/carros.dir/lista_ano.c.obj: CMakeFiles/carros.dir/flags.make
 CMakeFiles/carros.dir/lista_ano.c.obj: C:/Users/Deborah/c_project/lista_ano.c
@@ -172,22 +172,22 @@ CMakeFiles/carros.dir/lista_ano.c.s: cmake_force
 # Object files for target carros
 carros_OBJECTS = \
 "CMakeFiles/carros.dir/main.c.obj" \
-"CMakeFiles/carros.dir/p1.c.obj" \
-"CMakeFiles/carros.dir/p2.c.obj" \
-"CMakeFiles/carros.dir/arvore.c.obj" \
-"CMakeFiles/carros.dir/lista.c.obj" \
-"CMakeFiles/carros.dir/utils.c.obj" \
+"CMakeFiles/carros.dir/src/p1.c.obj" \
+"CMakeFiles/carros.dir/src/p2.c.obj" \
+"CMakeFiles/carros.dir/src/tree.c.obj" \
+"CMakeFiles/carros.dir/src/list.c.obj" \
+"CMakeFiles/carros.dir/src/utils.c.obj" \
 "CMakeFiles/carros.dir/lista_ano.c.obj"
 
 # External object files for target carros
 carros_EXTERNAL_OBJECTS =
 
 carros.exe: CMakeFiles/carros.dir/main.c.obj
-carros.exe: CMakeFiles/carros.dir/p1.c.obj
-carros.exe: CMakeFiles/carros.dir/p2.c.obj
-carros.exe: CMakeFiles/carros.dir/arvore.c.obj
-carros.exe: CMakeFiles/carros.dir/lista.c.obj
-carros.exe: CMakeFiles/carros.dir/utils.c.obj
+carros.exe: CMakeFiles/carros.dir/src/p1.c.obj
+carros.exe: CMakeFiles/carros.dir/src/p2.c.obj
+carros.exe: CMakeFiles/carros.dir/src/tree.c.obj
+carros.exe: CMakeFiles/carros.dir/src/list.c.obj
+carros.exe: CMakeFiles/carros.dir/src/utils.c.obj
 carros.exe: CMakeFiles/carros.dir/lista_ano.c.obj
 carros.exe: CMakeFiles/carros.dir/build.make
 carros.exe: CMakeFiles/carros.dir/linkLibs.rsp

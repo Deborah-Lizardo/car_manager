@@ -3,55 +3,55 @@
 #include <string.h>
 #include "../include/car.h"
 
-int ler_csv(Carro* vetor, int max, const char* nomeArquivo) {
-    FILE* arq = fopen(nomeArquivo, "r");
-    if (!arq) {
-        perror("Erro ao abrir o arquivo CSV");
+int read_csv(Car* array, int max, const char* filename) {
+    FILE* file = fopen(filename, "r");
+    if (!file) {
+        perror("Error opening CSV file");
         return 0;
     }
 
     int count = 0;
-    char linha[200];
-    while (fgets(linha, sizeof(linha), arq) && count < max) {
-        Carro c;
-        sscanf(linha, "%[^;];%[^;];%d;%d;%f\n", c.marca, c.modelo, &c.ano, &c.km, &c.preco);
-        vetor[count++] = c;
+    char line[200];
+    while (fgets(line, sizeof(line), file) && count < max) {
+        Car c;
+        sscanf(line, "%[^;];%[^;];%d;%d;%f\n", c.brand, c.model, &c.year, &c.km, &c.price);
+        array[count++] = c;
     }
 
-    fclose(arq);
+    fclose(file);
     return count;
 }
 
-void salvar_binario(const char* nomeArquivo, Carro* vetor, int n) {
-    FILE* arq = fopen(nomeArquivo, "wb");
-    if (!arq) {
-        perror("Erro ao criar o arquivo binário");
+void save_binary(const char* filename, Car* array, int n) {
+    FILE* file = fopen(filename, "wb");
+    if (!file) {
+        perror("Error creating binary file");
         return;
     }
 
-    fwrite(&n, sizeof(int), 1, arq); // salva quantidade
-    fwrite(vetor, sizeof(Carro), n, arq);
-    fclose(arq);
+    fwrite(&n, sizeof(int), 1, file);           // Write number of cars
+    fwrite(array, sizeof(Car), n, file);        // Write car data
+    fclose(file);
 }
 
-int carregar_binario(const char* nomeArquivo, Carro* vetor, int max) {
-    FILE* arq = fopen(nomeArquivo, "rb");
-    if (!arq) {
-        perror("Erro ao abrir o arquivo binário");
+int load_binary(const char* filename, Car* array, int max) {
+    FILE* file = fopen(filename, "rb");
+    if (!file) {
+        perror("Error opening binary file");
         return 0;
     }
 
     int n;
-    fread(&n, sizeof(int), 1, arq);
+    fread(&n, sizeof(int), 1, file);
     if (n > max) n = max;
-    fread(vetor, sizeof(Carro), n, arq);
-    fclose(arq);
+    fread(array, sizeof(Car), n, file);
+    fclose(file);
     return n;
 }
 
-void imprimir_carros(Carro* vetor, int n) {
+void print_cars(Car* array, int n) {
     for (int i = 0; i < n; i++) {
-        printf("Marca: %s | Modelo: %s | Ano: %d | Km: %d | Preço: %.2f\n",
-               vetor[i].marca, vetor[i].modelo, vetor[i].ano, vetor[i].km, vetor[i].preco);
+        printf("Brand: %s | Model: %s | Year: %d | Km: %d | Price: %.2f\n",
+               array[i].brand, array[i].model, array[i].year, array[i].km, array[i].price);
     }
 }

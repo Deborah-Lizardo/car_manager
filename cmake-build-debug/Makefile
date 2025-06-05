@@ -128,54 +128,6 @@ carros/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/build
 .PHONY : carros/fast
 
-arvore.obj: arvore.c.obj
-.PHONY : arvore.obj
-
-# target to build an object file
-arvore.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/arvore.c.obj
-.PHONY : arvore.c.obj
-
-arvore.i: arvore.c.i
-.PHONY : arvore.i
-
-# target to preprocess a source file
-arvore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/arvore.c.i
-.PHONY : arvore.c.i
-
-arvore.s: arvore.c.s
-.PHONY : arvore.s
-
-# target to generate assembly for a file
-arvore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/arvore.c.s
-.PHONY : arvore.c.s
-
-lista.obj: lista.c.obj
-.PHONY : lista.obj
-
-# target to build an object file
-lista.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/lista.c.obj
-.PHONY : lista.c.obj
-
-lista.i: lista.c.i
-.PHONY : lista.i
-
-# target to preprocess a source file
-lista.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/lista.c.i
-.PHONY : lista.c.i
-
-lista.s: lista.c.s
-.PHONY : lista.s
-
-# target to generate assembly for a file
-lista.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/lista.c.s
-.PHONY : lista.c.s
-
 lista_ano.obj: lista_ano.c.obj
 .PHONY : lista_ano.obj
 
@@ -224,77 +176,125 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/main.c.s
 .PHONY : main.c.s
 
-p1.obj: p1.c.obj
-.PHONY : p1.obj
+src/list.obj: src/list.c.obj
+.PHONY : src/list.obj
 
 # target to build an object file
-p1.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/p1.c.obj
-.PHONY : p1.c.obj
+src/list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/list.c.obj
+.PHONY : src/list.c.obj
 
-p1.i: p1.c.i
-.PHONY : p1.i
+src/list.i: src/list.c.i
+.PHONY : src/list.i
 
 # target to preprocess a source file
-p1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/p1.c.i
-.PHONY : p1.c.i
+src/list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/list.c.i
+.PHONY : src/list.c.i
 
-p1.s: p1.c.s
-.PHONY : p1.s
+src/list.s: src/list.c.s
+.PHONY : src/list.s
 
 # target to generate assembly for a file
-p1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/p1.c.s
-.PHONY : p1.c.s
+src/list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/list.c.s
+.PHONY : src/list.c.s
 
-p2.obj: p2.c.obj
-.PHONY : p2.obj
+src/p1.obj: src/p1.c.obj
+.PHONY : src/p1.obj
 
 # target to build an object file
-p2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/p2.c.obj
-.PHONY : p2.c.obj
+src/p1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/p1.c.obj
+.PHONY : src/p1.c.obj
 
-p2.i: p2.c.i
-.PHONY : p2.i
+src/p1.i: src/p1.c.i
+.PHONY : src/p1.i
 
 # target to preprocess a source file
-p2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/p2.c.i
-.PHONY : p2.c.i
+src/p1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/p1.c.i
+.PHONY : src/p1.c.i
 
-p2.s: p2.c.s
-.PHONY : p2.s
+src/p1.s: src/p1.c.s
+.PHONY : src/p1.s
 
 # target to generate assembly for a file
-p2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/p2.c.s
-.PHONY : p2.c.s
+src/p1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/p1.c.s
+.PHONY : src/p1.c.s
 
-utils.obj: utils.c.obj
-.PHONY : utils.obj
+src/p2.obj: src/p2.c.obj
+.PHONY : src/p2.obj
 
 # target to build an object file
-utils.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/utils.c.obj
-.PHONY : utils.c.obj
+src/p2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/p2.c.obj
+.PHONY : src/p2.c.obj
 
-utils.i: utils.c.i
-.PHONY : utils.i
+src/p2.i: src/p2.c.i
+.PHONY : src/p2.i
 
 # target to preprocess a source file
-utils.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/utils.c.i
-.PHONY : utils.c.i
+src/p2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/p2.c.i
+.PHONY : src/p2.c.i
 
-utils.s: utils.c.s
-.PHONY : utils.s
+src/p2.s: src/p2.c.s
+.PHONY : src/p2.s
 
 # target to generate assembly for a file
-utils.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/utils.c.s
-.PHONY : utils.c.s
+src/p2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/p2.c.s
+.PHONY : src/p2.c.s
+
+src/tree.obj: src/tree.c.obj
+.PHONY : src/tree.obj
+
+# target to build an object file
+src/tree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/tree.c.obj
+.PHONY : src/tree.c.obj
+
+src/tree.i: src/tree.c.i
+.PHONY : src/tree.i
+
+# target to preprocess a source file
+src/tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/tree.c.i
+.PHONY : src/tree.c.i
+
+src/tree.s: src/tree.c.s
+.PHONY : src/tree.s
+
+# target to generate assembly for a file
+src/tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/tree.c.s
+.PHONY : src/tree.c.s
+
+src/utils.obj: src/utils.c.obj
+.PHONY : src/utils.obj
+
+# target to build an object file
+src/utils.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/utils.c.obj
+.PHONY : src/utils.c.obj
+
+src/utils.i: src/utils.c.i
+.PHONY : src/utils.i
+
+# target to preprocess a source file
+src/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/utils.c.i
+.PHONY : src/utils.c.i
+
+src/utils.s: src/utils.c.s
+.PHONY : src/utils.s
+
+# target to generate assembly for a file
+src/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\carros.dir\build.make CMakeFiles/carros.dir/src/utils.c.s
+.PHONY : src/utils.c.s
 
 # Help Target
 help:
@@ -305,27 +305,27 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... carros
-	@echo ... arvore.obj
-	@echo ... arvore.i
-	@echo ... arvore.s
-	@echo ... lista.obj
-	@echo ... lista.i
-	@echo ... lista.s
 	@echo ... lista_ano.obj
 	@echo ... lista_ano.i
 	@echo ... lista_ano.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... p1.obj
-	@echo ... p1.i
-	@echo ... p1.s
-	@echo ... p2.obj
-	@echo ... p2.i
-	@echo ... p2.s
-	@echo ... utils.obj
-	@echo ... utils.i
-	@echo ... utils.s
+	@echo ... src/list.obj
+	@echo ... src/list.i
+	@echo ... src/list.s
+	@echo ... src/p1.obj
+	@echo ... src/p1.i
+	@echo ... src/p1.s
+	@echo ... src/p2.obj
+	@echo ... src/p2.i
+	@echo ... src/p2.s
+	@echo ... src/tree.obj
+	@echo ... src/tree.i
+	@echo ... src/tree.s
+	@echo ... src/utils.obj
+	@echo ... src/utils.i
+	@echo ... src/utils.s
 .PHONY : help
 
 

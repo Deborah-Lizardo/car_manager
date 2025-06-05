@@ -34,7 +34,7 @@ void printList(Node* list) {
                current->car.model,
                current->car.year,
                current->car.price,
-               current->car.mileage);
+               current->car.km);
         current = current->next;
     }
 }

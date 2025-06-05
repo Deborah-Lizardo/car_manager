@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
         Car c;
         // Read brand, model, year, mileage, price from CSV line
         if (sscanf(line, "%[^,],%[^,],%d,%d,%f",
-                   c.brand, c.model, &c.year, &c.mileage, &c.price) == 5) {
+                   c.brand, c.model, &c.year, &c.km, &c.price) == 5) {
             list = insertAtEnd(list, c);
             count++;
                    }

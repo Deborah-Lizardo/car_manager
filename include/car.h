@@ -5,7 +5,7 @@ typedef struct {
     char model[50];
     char brand[50];
     int year;
-    int mileage;
+    int km;
     float price;
 } Car;
 
