@@ -4,3 +4,7 @@ cmake-build-debug/
 *.o
 *.obj
 *.log
+
+CMakeFiles/
+CMakeCache.txt
+Makefile
