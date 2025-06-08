@@ -14,7 +14,7 @@ int read_csv(Car* array, int max, const char* filename) {
     char line[200];
     while (fgets(line, sizeof(line), file) && count < max) {
         Car c;
-        sscanf(line, "%[^;];%[^;];%d;%d;%f\n", c.brand, c.model, &c.year, &c.km, &c.price);
+        scanf(line, "%[^;];%[^;];%d;%d;%f\n", c.brand, c.model, &c.year, &c.km, &c.price);
         array[count++] = c;
     }
 
