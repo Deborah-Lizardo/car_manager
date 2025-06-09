@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "../include/year_list.h"
 
 // Function to insert a car into the YearNode list
@@ -14,31 +15,32 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
     }
     // If the year already exists, add the car to its car list
     if (current != NULL && current->year == year) {
-        YearCarNode* newCarNode = (YearCarNode*)malloc(sizeof(YearCarNode));
+        YearCarNode* newCarNode = malloc(sizeof(YearCarNode)); // Allocate memory for the new car node
         if (newCarNode == NULL) {
             printf("Memory allocation failed!\n");
             return list;
         }
         newCarNode->car = car;
-        newCarNode->next = current->CarList;
-        current->CarList = newCarNode;
+        newCarNode->next = current->CarList; // Use CarList instead of carList
+        current->CarList = newCarNode; // Link new car node to the CarList of the year node
         return list;
     }
 
-    // Create a new year node
-    YearNode* newYearNode = (YearNode*)malloc(sizeof(YearNode));
+    // Create a new year node if the year doesn't exist
+    YearNode* newYearNode = malloc(sizeof(YearNode)); // Allocate memory for the new year node
     if (newYearNode == NULL) {
         printf("Memory allocation failed!\n");
         return list;
     }
     newYearNode->year = year;
-    newYearNode->CarList = NULL;
-    newYearNode->next = current;
+    newYearNode->CarList = NULL; // Initialize the CarList as NULL
+    newYearNode->next = current; // Link the new year node to the existing list
 
     // Create the first car node for this year
-    YearCarNode* newCarNode = (YearCarNode*)malloc(sizeof(YearCarNode));
+    YearCarNode* newCarNode = malloc(sizeof(YearCarNode)); // Allocate memory for the first car node
     if (newCarNode == NULL) {
         printf("Memory allocation failed!\n");
+        free(newYearNode); // Free the year node if car node allocation fails
         return list;
     }
     newCarNode->car = car;
@@ -46,16 +48,17 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
     newYearNode->CarList = newCarNode;
 
     if (previous == NULL) {
-        // Insert at the beginning of the list
         return newYearNode;
     } else {
         previous->next = newYearNode;
         return list;
     }
 }
+
 // Function to display cars from a certain year or greater
 void displayCarsFromYear(YearNode* list, int minYear) {
     while (list != NULL) {
+        // Only display cars from the specified year or later
         if (list->year >= minYear) {
             printf("Cars from year %d or later:\n", list->year);
             YearCarNode* node = list->CarList;
@@ -69,18 +72,19 @@ void displayCarsFromYear(YearNode* list, int minYear) {
         list = list->next;
     }
 }
-// Function to free the memory allocated for the year list
+
+// Function to free the allocated memory for the year list
 void freeYearList(YearNode* list) {
     while (list != NULL) {
         YearNode* temp = list;
         list = list->next;
 
         // Free all YearCarNode nodes
-        YearCarNode* node = temp->CarList;
+        YearCarNode* node = temp->CarList; // Use CarList instead of carList
         while (node != NULL) {
             YearCarNode* aux = node;
             node = node->next;
-            free(aux);  // Free the individual car nodes
+            free(aux); // Free each car node
         }
 
         free(temp);  // Free the year node itself
