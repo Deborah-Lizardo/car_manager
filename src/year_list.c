@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include "../include/year_list.h"
 
 // Function to insert a car into the YearNode list
@@ -21,8 +20,8 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
             return list;
         }
         newCarNode->car = car;
-        newCarNode->next = current->carList;
-        current->carList = newCarNode;
+        newCarNode->next = current->CarList;
+        current->CarList = newCarNode;
         return list;
     }
 
@@ -33,7 +32,7 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
         return list;
     }
     newYearNode->year = year;
-    newYearNode->carList = NULL;
+    newYearNode->CarList = NULL;
     newYearNode->next = current;
 
     // Create the first car node for this year
@@ -44,7 +43,7 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
     }
     newCarNode->car = car;
     newCarNode->next = NULL;
-    newYearNode->carList = newCarNode;
+    newYearNode->CarList = newCarNode;
 
     if (previous == NULL) {
         // Insert at the beginning of the list
@@ -59,7 +58,7 @@ void displayCarsFromYear(YearNode* list, int minYear) {
     while (list != NULL) {
         if (list->year >= minYear) {
             printf("Cars from year %d or later:\n", list->year);
-            YearCarNode* node = list->carList;
+            YearCarNode* node = list->CarList;
             while (node != NULL) {
                 Car* c = node->car;
                 printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
@@ -77,7 +76,7 @@ void freeYearList(YearNode* list) {
         list = list->next;
 
         // Free all YearCarNode nodes
-        YearCarNode* node = temp->carList;
+        YearCarNode* node = temp->CarList;
         while (node != NULL) {
             YearCarNode* aux = node;
             node = node->next;

@@ -7,9 +7,8 @@ typedef struct Node {
     struct Node* next;
 } Node;
 
-// Main list functions
-Node* insertAtEnd(Node* list, Car car);
-void printList(Node* list);
-void freeList(Node* list);
+Node* insertAtEnd(Node* list, Car car);  // Inserts a car at the end of the list
+void printList(Node* list);               // Prints all cars in the list
+void freeList(Node* list);                // Frees all memory of the list
 
 #endif
