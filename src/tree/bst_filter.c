@@ -1,27 +1,39 @@
 #include <stdio.h>
-#include "bst_price.h"   // ou o arquivo que declara Node
-#include "bst_mileage.h" // se Node estiver lá, ajuste conforme seu projeto
+#include "../include/bst_filter.h"
+#include "../include/mil_tree.h"
+#include "../include/price_tree.h"
 
-void filterByPrice(Node* root, int minPrice, int maxPrice) {
+// Function to filter by price in the binary search tree
+void filterByPrice(PriceTree* root, float minPrice, float maxPrice) {
+    // If the current node is NULL, just return
     if (root == NULL) return;
 
+    // Recursively traverse the left subtree
     filterByPrice(root->left, minPrice, maxPrice);
 
+    // Check if the car's price is within the specified range
     if (root->price >= minPrice && root->price <= maxPrice) {
-        printf("Model: %s, Price: %d, Mileage: %d\n", root->model, root->price, root->mileage);
+        // Print the car's details if it matches the criteria
+        printf("Model: %s, Price: %.2f, Mileage: %d\n", root->car->model, root->price, root->car->km);
     }
 
+    // Recursively traverse the right subtree
     filterByPrice(root->right, minPrice, maxPrice);
 }
 
-void filterByMileage(Node* root, int minMileage, int maxMileage) {
+// Function to filter by mileage in the binary search tree
+void filterByMileage(MileageTree* root, int minMileage, int maxMileage) {
+    // If the current node is NULL, just return
     if (root == NULL) return;
 
+    // Recursively traverse the left subtree
     filterByMileage(root->left, minMileage, maxMileage);
 
-    if (root->mileage >= minMileage && root->mileage <= maxMileage) {
-        printf("Model: %s, Mileage: %d, Price: %d\n", root->model, root->mileage, root->price);
+    // Check if the car's mileage is within the specified range
+    if (root->car->km >= minMileage && root->car->km <= maxMileage) {
+        // Print the car's details if it matches the criteria
+        printf("Model: %s, Mileage: %d, Price: %.2f\n", root->car->model, root->car->km, root->car->price);
     }
 
-    filterByMileage(root->right, minMileage, maxMileage);
-}
+    // Recursively traverse the right subtree
+    filterByMileage(root->right, minMileage,
