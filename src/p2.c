@@ -126,7 +126,7 @@ int main(int argc, char* argv[]) {
 
     } while (option != 6);
 
-    // Free memory 
+    // Free memory
     free(cars);
     freeYearList(yearList);
     freeTree(kmTree);

@@ -21,15 +21,27 @@ int main(int argc, char* argv[]) {
     Node* list = NULL;
     char line[MAX_LINE];
     int count = 0;
+    int isFirstLine = 1;
 
     while (fgets(line, MAX_LINE, input)) {
+        // Remove newline character, if present
+        line[strcspn(line, "\n")] = '\0';
+
+        // Skip possible header line
+        if (isFirstLine && strstr(line, "marca") != NULL) {
+            isFirstLine = 0;
+            continue;
+        }
+
         Car c;
-        // Read brand, model, year, mileage, price from CSV line
         if (sscanf(line, "%[^,],%[^,],%d,%d,%f",
                    c.brand, c.model, &c.year, &c.km, &c.price) == 5) {
             list = insertAtEnd(list, c);
             count++;
+                   } else {
+                       fprintf(stderr, "Skipped line (invalid format): %s\n", line);
                    }
+        isFirstLine = 0;
     }
 
     fclose(input);
@@ -41,7 +53,6 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    // Write number of records
     fwrite(&count, sizeof(int), 1, output);
 
     Node* current = list;
@@ -53,6 +64,6 @@ int main(int argc, char* argv[]) {
     fclose(output);
     freeList(list);
 
-    printf("Data successfully saved to %s\n", argv[2]);
+    printf("Data successfully saved to %s (%d records)\n", argv[2], count);
     return 0;
 }
