@@ -36,4 +36,5 @@ void filterByMileage(MileageTree* root, int minMileage, int maxMileage) {
     }
 
     // Recursively traverse the right subtree
-    filterByMileage(root->right, minMileage,
+    filterByMileage(root->right, minMileage, maxMileage);
+}
