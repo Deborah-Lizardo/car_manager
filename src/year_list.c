@@ -15,6 +15,15 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
     }
     // If the year already exists, add the car to its car list
     if (current != NULL && current->year == year) {
+        // Check if the car already exists in the list for this year
+        YearCarNode* carNode = current->CarList;
+        while (carNode != NULL) {
+            if (carNode->car == car) {  // Check if the car is already in the list
+                return list;  // If the car already exists, return the list as is (no insertion)
+            }
+            carNode = carNode->next;
+        }
+
         YearCarNode* newCarNode = malloc(sizeof(YearCarNode)); // Allocate memory for the new car node
         if (newCarNode == NULL) {
             printf("Memory allocation failed!\n");
@@ -64,7 +73,7 @@ void displayCarsFromYear(YearNode* list, int minYear) {
             YearCarNode* node = list->CarList;
             while (node != NULL) {
                 Car* c = node->car;
-                printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
+                printf("Brand: %s | Model: %s | Year: %d | Mileage: %d| Price: %.2f\n",
                        c->brand, c->model, c->year, c->km, c->price);
                 node = node->next;
             }
