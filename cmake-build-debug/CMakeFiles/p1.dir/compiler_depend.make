@@ -49,7 +49,9 @@ CMakeFiles/p1.dir/src/p1.c.obj: C:/Users/Deborah/CLionProjects/car_manager/src/p
   C:/Program\ Files/JetBrains/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/stdlib.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/string.h \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/swprintf.inl \
-  C:/Program\ Files/JetBrains/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h
+  C:/Program\ Files/JetBrains/CLion\ 2024.3.3/bin/mingw/x86_64-w64-mingw32/include/vadefs.h \
+  C:/Users/Deborah/CLionProjects/car_manager/include/car.h \
+  C:/Users/Deborah/CLionProjects/car_manager/include/list.h
 
 CMakeFiles/p1.dir/src/utils.c.obj: C:/Users/Deborah/CLionProjects/car_manager/src/utils.c \
   C:/Program\ Files/JetBrains/CLion\ 2024.3.3/bin/mingw/lib/gcc/x86_64-w64-mingw32/13.1.0/include/limits.h \

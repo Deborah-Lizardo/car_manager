@@ -7,3 +7,6 @@
 /dataSources/
 /dataSources.local.xml
 desktop.ini
+cmake-build-debug/
+cmake-build-release/
+build/
