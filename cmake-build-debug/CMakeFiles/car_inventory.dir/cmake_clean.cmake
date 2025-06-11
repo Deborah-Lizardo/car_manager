@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/car_inventory.dir/src/main.c.obj"
-  "CMakeFiles/car_inventory.dir/src/main.c.obj.d"
+  "CMakeFiles/car_inventory.dir/src/mil_tree.c.obj"
+  "CMakeFiles/car_inventory.dir/src/mil_tree.c.obj.d"
+  "CMakeFiles/car_inventory.dir/src/p2.c.obj"
+  "CMakeFiles/car_inventory.dir/src/p2.c.obj.d"
+  "CMakeFiles/car_inventory.dir/src/price_tree.c.obj"
+  "CMakeFiles/car_inventory.dir/src/price_tree.c.obj.d"
   "CMakeFiles/car_inventory.dir/src/utils.c.obj"
   "CMakeFiles/car_inventory.dir/src/utils.c.obj.d"
   "CMakeFiles/car_inventory.dir/src/year_list.c.obj"

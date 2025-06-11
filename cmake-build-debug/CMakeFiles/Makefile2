@@ -62,10 +62,12 @@ CMAKE_BINARY_DIR = C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/p1.dir/all
 all: CMakeFiles/car_inventory.dir/all
 .PHONY : all
 
 # The main recursive "codegen" target.
+codegen: CMakeFiles/p1.dir/codegen
 codegen: CMakeFiles/car_inventory.dir/codegen
 .PHONY : codegen
 
@@ -74,8 +76,41 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/p1.dir/clean
 clean: CMakeFiles/car_inventory.dir/clean
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/p1.dir
+
+# All Build rule for target.
+CMakeFiles/p1.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10 "Built target p1"
+.PHONY : CMakeFiles/p1.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/p1.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/p1.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/p1.dir/rule
+
+# Convenience name for target.
+p1: CMakeFiles/p1.dir/rule
+.PHONY : p1
+
+# codegen rule for target.
+CMakeFiles/p1.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=7,8,9,10 "Finished codegen for target p1"
+.PHONY : CMakeFiles/p1.dir/codegen
+
+# clean rule for target.
+CMakeFiles/p1.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/clean
+.PHONY : CMakeFiles/p1.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/car_inventory.dir
@@ -84,12 +119,12 @@ clean: CMakeFiles/car_inventory.dir/clean
 CMakeFiles/car_inventory.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target car_inventory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Built target car_inventory"
 .PHONY : CMakeFiles/car_inventory.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/car_inventory.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/car_inventory.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/car_inventory.dir/rule
@@ -101,7 +136,7 @@ car_inventory: CMakeFiles/car_inventory.dir/rule
 # codegen rule for target.
 CMakeFiles/car_inventory.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Finished codegen for target car_inventory"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6 "Finished codegen for target car_inventory"
 .PHONY : CMakeFiles/car_inventory.dir/codegen
 
 # clean rule for target.

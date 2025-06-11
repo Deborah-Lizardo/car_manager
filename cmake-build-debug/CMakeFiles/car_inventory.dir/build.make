@@ -71,20 +71,20 @@ include CMakeFiles/car_inventory.dir/flags.make
 CMakeFiles/car_inventory.dir/codegen:
 .PHONY : CMakeFiles/car_inventory.dir/codegen
 
-CMakeFiles/car_inventory.dir/src/main.c.obj: CMakeFiles/car_inventory.dir/flags.make
-CMakeFiles/car_inventory.dir/src/main.c.obj: CMakeFiles/car_inventory.dir/includes_C.rsp
-CMakeFiles/car_inventory.dir/src/main.c.obj: C:/Users/Deborah/CLionProjects/car_manager/src/main.c
-CMakeFiles/car_inventory.dir/src/main.c.obj: CMakeFiles/car_inventory.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/car_inventory.dir/src/main.c.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/car_inventory.dir/src/main.c.obj -MF CMakeFiles\car_inventory.dir\src\main.c.obj.d -o CMakeFiles\car_inventory.dir\src\main.c.obj -c C:\Users\Deborah\CLionProjects\car_manager\src\main.c
+CMakeFiles/car_inventory.dir/src/p2.c.obj: CMakeFiles/car_inventory.dir/flags.make
+CMakeFiles/car_inventory.dir/src/p2.c.obj: CMakeFiles/car_inventory.dir/includes_C.rsp
+CMakeFiles/car_inventory.dir/src/p2.c.obj: C:/Users/Deborah/CLionProjects/car_manager/src/p2.c
+CMakeFiles/car_inventory.dir/src/p2.c.obj: CMakeFiles/car_inventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/car_inventory.dir/src/p2.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/car_inventory.dir/src/p2.c.obj -MF CMakeFiles\car_inventory.dir\src\p2.c.obj.d -o CMakeFiles\car_inventory.dir\src\p2.c.obj -c C:\Users\Deborah\CLionProjects\car_manager\src\p2.c
 
-CMakeFiles/car_inventory.dir/src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/car_inventory.dir/src/main.c.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\CLionProjects\car_manager\src\main.c > CMakeFiles\car_inventory.dir\src\main.c.i
+CMakeFiles/car_inventory.dir/src/p2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/car_inventory.dir/src/p2.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\CLionProjects\car_manager\src\p2.c > CMakeFiles\car_inventory.dir\src\p2.c.i
 
-CMakeFiles/car_inventory.dir/src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/car_inventory.dir/src/main.c.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\CLionProjects\car_manager\src\main.c -o CMakeFiles\car_inventory.dir\src\main.c.s
+CMakeFiles/car_inventory.dir/src/p2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/car_inventory.dir/src/p2.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\CLionProjects\car_manager\src\p2.c -o CMakeFiles\car_inventory.dir\src\p2.c.s
 
 CMakeFiles/car_inventory.dir/src/utils.c.obj: CMakeFiles/car_inventory.dir/flags.make
 CMakeFiles/car_inventory.dir/src/utils.c.obj: CMakeFiles/car_inventory.dir/includes_C.rsp
@@ -116,23 +116,57 @@ CMakeFiles/car_inventory.dir/src/year_list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/car_inventory.dir/src/year_list.c.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\CLionProjects\car_manager\src\year_list.c -o CMakeFiles\car_inventory.dir\src\year_list.c.s
 
+CMakeFiles/car_inventory.dir/src/mil_tree.c.obj: CMakeFiles/car_inventory.dir/flags.make
+CMakeFiles/car_inventory.dir/src/mil_tree.c.obj: CMakeFiles/car_inventory.dir/includes_C.rsp
+CMakeFiles/car_inventory.dir/src/mil_tree.c.obj: C:/Users/Deborah/CLionProjects/car_manager/src/mil_tree.c
+CMakeFiles/car_inventory.dir/src/mil_tree.c.obj: CMakeFiles/car_inventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/car_inventory.dir/src/mil_tree.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/car_inventory.dir/src/mil_tree.c.obj -MF CMakeFiles\car_inventory.dir\src\mil_tree.c.obj.d -o CMakeFiles\car_inventory.dir\src\mil_tree.c.obj -c C:\Users\Deborah\CLionProjects\car_manager\src\mil_tree.c
+
+CMakeFiles/car_inventory.dir/src/mil_tree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/car_inventory.dir/src/mil_tree.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\CLionProjects\car_manager\src\mil_tree.c > CMakeFiles\car_inventory.dir\src\mil_tree.c.i
+
+CMakeFiles/car_inventory.dir/src/mil_tree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/car_inventory.dir/src/mil_tree.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\CLionProjects\car_manager\src\mil_tree.c -o CMakeFiles\car_inventory.dir\src\mil_tree.c.s
+
+CMakeFiles/car_inventory.dir/src/price_tree.c.obj: CMakeFiles/car_inventory.dir/flags.make
+CMakeFiles/car_inventory.dir/src/price_tree.c.obj: CMakeFiles/car_inventory.dir/includes_C.rsp
+CMakeFiles/car_inventory.dir/src/price_tree.c.obj: C:/Users/Deborah/CLionProjects/car_manager/src/price_tree.c
+CMakeFiles/car_inventory.dir/src/price_tree.c.obj: CMakeFiles/car_inventory.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/car_inventory.dir/src/price_tree.c.obj"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/car_inventory.dir/src/price_tree.c.obj -MF CMakeFiles\car_inventory.dir\src\price_tree.c.obj.d -o CMakeFiles\car_inventory.dir\src\price_tree.c.obj -c C:\Users\Deborah\CLionProjects\car_manager\src\price_tree.c
+
+CMakeFiles/car_inventory.dir/src/price_tree.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/car_inventory.dir/src/price_tree.c.i"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Deborah\CLionProjects\car_manager\src\price_tree.c > CMakeFiles\car_inventory.dir\src\price_tree.c.i
+
+CMakeFiles/car_inventory.dir/src/price_tree.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/car_inventory.dir/src/price_tree.c.s"
+	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Deborah\CLionProjects\car_manager\src\price_tree.c -o CMakeFiles\car_inventory.dir\src\price_tree.c.s
+
 # Object files for target car_inventory
 car_inventory_OBJECTS = \
-"CMakeFiles/car_inventory.dir/src/main.c.obj" \
+"CMakeFiles/car_inventory.dir/src/p2.c.obj" \
 "CMakeFiles/car_inventory.dir/src/utils.c.obj" \
-"CMakeFiles/car_inventory.dir/src/year_list.c.obj"
+"CMakeFiles/car_inventory.dir/src/year_list.c.obj" \
+"CMakeFiles/car_inventory.dir/src/mil_tree.c.obj" \
+"CMakeFiles/car_inventory.dir/src/price_tree.c.obj"
 
 # External object files for target car_inventory
 car_inventory_EXTERNAL_OBJECTS =
 
-car_inventory.exe: CMakeFiles/car_inventory.dir/src/main.c.obj
+car_inventory.exe: CMakeFiles/car_inventory.dir/src/p2.c.obj
 car_inventory.exe: CMakeFiles/car_inventory.dir/src/utils.c.obj
 car_inventory.exe: CMakeFiles/car_inventory.dir/src/year_list.c.obj
+car_inventory.exe: CMakeFiles/car_inventory.dir/src/mil_tree.c.obj
+car_inventory.exe: CMakeFiles/car_inventory.dir/src/price_tree.c.obj
 car_inventory.exe: CMakeFiles/car_inventory.dir/build.make
 car_inventory.exe: CMakeFiles/car_inventory.dir/linkLibs.rsp
 car_inventory.exe: CMakeFiles/car_inventory.dir/objects1.rsp
 car_inventory.exe: CMakeFiles/car_inventory.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable car_inventory.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\Deborah\CLionProjects\car_manager\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable car_inventory.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\car_inventory.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

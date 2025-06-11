@@ -116,6 +116,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named p1
+
+# Build rule for target.
+p1: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p1
+.PHONY : p1
+
+# fast build rule for target.
+p1/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/build
+.PHONY : p1/fast
+
+#=============================================================================
 # Target rules for targets named car_inventory
 
 # Build rule for target.
@@ -128,35 +141,132 @@ car_inventory/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/build
 .PHONY : car_inventory/fast
 
-src/main.obj: src/main.c.obj
-.PHONY : src/main.obj
+src/list.obj: src/list.c.obj
+.PHONY : src/list.obj
 
 # target to build an object file
-src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/main.c.obj
-.PHONY : src/main.c.obj
+src/list.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/list.c.obj
+.PHONY : src/list.c.obj
 
-src/main.i: src/main.c.i
-.PHONY : src/main.i
+src/list.i: src/list.c.i
+.PHONY : src/list.i
 
 # target to preprocess a source file
-src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/main.c.i
-.PHONY : src/main.c.i
+src/list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/list.c.i
+.PHONY : src/list.c.i
 
-src/main.s: src/main.c.s
-.PHONY : src/main.s
+src/list.s: src/list.c.s
+.PHONY : src/list.s
 
 # target to generate assembly for a file
-src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/main.c.s
-.PHONY : src/main.c.s
+src/list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/list.c.s
+.PHONY : src/list.c.s
+
+src/mil_tree.obj: src/mil_tree.c.obj
+.PHONY : src/mil_tree.obj
+
+# target to build an object file
+src/mil_tree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/mil_tree.c.obj
+.PHONY : src/mil_tree.c.obj
+
+src/mil_tree.i: src/mil_tree.c.i
+.PHONY : src/mil_tree.i
+
+# target to preprocess a source file
+src/mil_tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/mil_tree.c.i
+.PHONY : src/mil_tree.c.i
+
+src/mil_tree.s: src/mil_tree.c.s
+.PHONY : src/mil_tree.s
+
+# target to generate assembly for a file
+src/mil_tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/mil_tree.c.s
+.PHONY : src/mil_tree.c.s
+
+src/p1.obj: src/p1.c.obj
+.PHONY : src/p1.obj
+
+# target to build an object file
+src/p1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/p1.c.obj
+.PHONY : src/p1.c.obj
+
+src/p1.i: src/p1.c.i
+.PHONY : src/p1.i
+
+# target to preprocess a source file
+src/p1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/p1.c.i
+.PHONY : src/p1.c.i
+
+src/p1.s: src/p1.c.s
+.PHONY : src/p1.s
+
+# target to generate assembly for a file
+src/p1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/p1.c.s
+.PHONY : src/p1.c.s
+
+src/p2.obj: src/p2.c.obj
+.PHONY : src/p2.obj
+
+# target to build an object file
+src/p2.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/p2.c.obj
+.PHONY : src/p2.c.obj
+
+src/p2.i: src/p2.c.i
+.PHONY : src/p2.i
+
+# target to preprocess a source file
+src/p2.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/p2.c.i
+.PHONY : src/p2.c.i
+
+src/p2.s: src/p2.c.s
+.PHONY : src/p2.s
+
+# target to generate assembly for a file
+src/p2.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/p2.c.s
+.PHONY : src/p2.c.s
+
+src/price_tree.obj: src/price_tree.c.obj
+.PHONY : src/price_tree.obj
+
+# target to build an object file
+src/price_tree.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/price_tree.c.obj
+.PHONY : src/price_tree.c.obj
+
+src/price_tree.i: src/price_tree.c.i
+.PHONY : src/price_tree.i
+
+# target to preprocess a source file
+src/price_tree.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/price_tree.c.i
+.PHONY : src/price_tree.c.i
+
+src/price_tree.s: src/price_tree.c.s
+.PHONY : src/price_tree.s
+
+# target to generate assembly for a file
+src/price_tree.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/price_tree.c.s
+.PHONY : src/price_tree.c.s
 
 src/utils.obj: src/utils.c.obj
 .PHONY : src/utils.obj
 
 # target to build an object file
 src/utils.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/utils.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/utils.c.obj
 .PHONY : src/utils.c.obj
 
@@ -165,6 +275,7 @@ src/utils.i: src/utils.c.i
 
 # target to preprocess a source file
 src/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/utils.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
@@ -173,6 +284,7 @@ src/utils.s: src/utils.c.s
 
 # target to generate assembly for a file
 src/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/utils.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
@@ -209,9 +321,22 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... car_inventory
-	@echo ... src/main.obj
-	@echo ... src/main.i
-	@echo ... src/main.s
+	@echo ... p1
+	@echo ... src/list.obj
+	@echo ... src/list.i
+	@echo ... src/list.s
+	@echo ... src/mil_tree.obj
+	@echo ... src/mil_tree.i
+	@echo ... src/mil_tree.s
+	@echo ... src/p1.obj
+	@echo ... src/p1.i
+	@echo ... src/p1.s
+	@echo ... src/p2.obj
+	@echo ... src/p2.i
+	@echo ... src/p2.s
+	@echo ... src/price_tree.obj
+	@echo ... src/price_tree.i
+	@echo ... src/price_tree.s
 	@echo ... src/utils.obj
 	@echo ... src/utils.i
 	@echo ... src/utils.s

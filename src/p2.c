@@ -73,7 +73,7 @@ int main(int argc, char* argv[]) {
 
     for (int i = 0; i < count; i++) {
         yearList = insertYear(yearList, cars[i].year, &cars[i]);
-        kmTree = insertNode(kmTree, cars[i].km, &cars[i]);
+        kmTree = insertNodeKm(kmTree, cars[i].km, &cars[i]);
         priceTree = insertPriceNode(priceTree, cars[i].price, &cars[i]);
     }
 
@@ -129,7 +129,7 @@ int main(int argc, char* argv[]) {
     // Free memory
     free(cars);
     freeYearList(yearList);
-    freeTree(kmTree);
+    freeKmTree(kmTree);
     freePriceTree(priceTree);
 
     return 0;
