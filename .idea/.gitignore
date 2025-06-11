@@ -10,3 +10,5 @@ desktop.ini
 cmake-build-debug/
 cmake-build-release/
 build/
+CMakeCXXCompilerId.cpp
+
