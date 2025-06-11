@@ -2,14 +2,14 @@
 #define YEAR_LIST_H
 #include "car.h"
 
-typedef struct YearNode {
+typedef struct YearNode {//O nó da lista de anos contém o ano e um ponteiro para a lista de carros year
     int year;
     struct YearCarNode *CarList;
     struct YearNode* next;
 } YearNode;
 
-typedef struct YearCarNode { // lista enc ordenada por ano
-    Car* car;
+typedef struct YearCarNode { //cada no da lista de carros
+    Car* car;//ponteiro para o vetor de carros
     struct YearCarNode* next;
 } YearCarNode;
 
