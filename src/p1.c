@@ -28,7 +28,7 @@ int main(int argc, char* argv[]) {
         line[strcspn(line, "\n")] = '\0';
 
         // Skip possible header line
-        if (isFirstLine && strstr(line, "marca") != NULL) {
+        if (isFirstLine && strstr(line, "brand") != NULL) {
             isFirstLine = 0;
             continue;
         }

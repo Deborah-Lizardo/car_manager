@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "car_inventory.exe"
+			"path" : "p2.exe"
 		},
 		{
-			"path" : "car_inventory.pdb"
+			"path" : "p2.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -74,7 +74,7 @@
 			]
 		}
 	],
-	"id" : "car_inventory::@6890427a1f51a3e7e1df",
+	"id" : "p2::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -94,8 +94,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "car_inventory",
-	"nameOnDisk" : "car_inventory.exe",
+	"name" : "p2",
+	"nameOnDisk" : "p2.exe",
 	"paths" : 
 	{
 		"build" : ".",

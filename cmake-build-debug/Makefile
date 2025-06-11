@@ -129,17 +129,17 @@ p1/fast:
 .PHONY : p1/fast
 
 #=============================================================================
-# Target rules for targets named car_inventory
+# Target rules for targets named p2
 
 # Build rule for target.
-car_inventory: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 car_inventory
-.PHONY : car_inventory
+p2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 p2
+.PHONY : p2
 
 # fast build rule for target.
-car_inventory/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/build
-.PHONY : car_inventory/fast
+p2/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/build
+.PHONY : p2/fast
 
 src/list.obj: src/list.c.obj
 .PHONY : src/list.obj
@@ -170,7 +170,7 @@ src/mil_tree.obj: src/mil_tree.c.obj
 
 # target to build an object file
 src/mil_tree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/mil_tree.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/mil_tree.c.obj
 .PHONY : src/mil_tree.c.obj
 
 src/mil_tree.i: src/mil_tree.c.i
@@ -178,7 +178,7 @@ src/mil_tree.i: src/mil_tree.c.i
 
 # target to preprocess a source file
 src/mil_tree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/mil_tree.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/mil_tree.c.i
 .PHONY : src/mil_tree.c.i
 
 src/mil_tree.s: src/mil_tree.c.s
@@ -186,7 +186,7 @@ src/mil_tree.s: src/mil_tree.c.s
 
 # target to generate assembly for a file
 src/mil_tree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/mil_tree.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/mil_tree.c.s
 .PHONY : src/mil_tree.c.s
 
 src/p1.obj: src/p1.c.obj
@@ -218,7 +218,7 @@ src/p2.obj: src/p2.c.obj
 
 # target to build an object file
 src/p2.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/p2.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/p2.c.obj
 .PHONY : src/p2.c.obj
 
 src/p2.i: src/p2.c.i
@@ -226,7 +226,7 @@ src/p2.i: src/p2.c.i
 
 # target to preprocess a source file
 src/p2.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/p2.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/p2.c.i
 .PHONY : src/p2.c.i
 
 src/p2.s: src/p2.c.s
@@ -234,7 +234,7 @@ src/p2.s: src/p2.c.s
 
 # target to generate assembly for a file
 src/p2.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/p2.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/p2.c.s
 .PHONY : src/p2.c.s
 
 src/price_tree.obj: src/price_tree.c.obj
@@ -242,7 +242,7 @@ src/price_tree.obj: src/price_tree.c.obj
 
 # target to build an object file
 src/price_tree.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/price_tree.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/price_tree.c.obj
 .PHONY : src/price_tree.c.obj
 
 src/price_tree.i: src/price_tree.c.i
@@ -250,7 +250,7 @@ src/price_tree.i: src/price_tree.c.i
 
 # target to preprocess a source file
 src/price_tree.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/price_tree.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/price_tree.c.i
 .PHONY : src/price_tree.c.i
 
 src/price_tree.s: src/price_tree.c.s
@@ -258,7 +258,7 @@ src/price_tree.s: src/price_tree.c.s
 
 # target to generate assembly for a file
 src/price_tree.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/price_tree.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/price_tree.c.s
 .PHONY : src/price_tree.c.s
 
 src/utils.obj: src/utils.c.obj
@@ -267,7 +267,7 @@ src/utils.obj: src/utils.c.obj
 # target to build an object file
 src/utils.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/utils.c.obj
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/utils.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/utils.c.obj
 .PHONY : src/utils.c.obj
 
 src/utils.i: src/utils.c.i
@@ -276,7 +276,7 @@ src/utils.i: src/utils.c.i
 # target to preprocess a source file
 src/utils.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/utils.c.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/utils.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/utils.c.i
 .PHONY : src/utils.c.i
 
 src/utils.s: src/utils.c.s
@@ -285,7 +285,7 @@ src/utils.s: src/utils.c.s
 # target to generate assembly for a file
 src/utils.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\p1.dir\build.make CMakeFiles/p1.dir/src/utils.c.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/utils.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/utils.c.s
 .PHONY : src/utils.c.s
 
 src/year_list.obj: src/year_list.c.obj
@@ -293,7 +293,7 @@ src/year_list.obj: src/year_list.c.obj
 
 # target to build an object file
 src/year_list.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/year_list.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/year_list.c.obj
 .PHONY : src/year_list.c.obj
 
 src/year_list.i: src/year_list.c.i
@@ -301,7 +301,7 @@ src/year_list.i: src/year_list.c.i
 
 # target to preprocess a source file
 src/year_list.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/year_list.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/year_list.c.i
 .PHONY : src/year_list.c.i
 
 src/year_list.s: src/year_list.c.s
@@ -309,7 +309,7 @@ src/year_list.s: src/year_list.c.s
 
 # target to generate assembly for a file
 src/year_list.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\car_inventory.dir\build.make CMakeFiles/car_inventory.dir/src/year_list.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\p2.dir\build.make CMakeFiles/p2.dir/src/year_list.c.s
 .PHONY : src/year_list.c.s
 
 # Help Target
@@ -320,8 +320,8 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... car_inventory
 	@echo ... p1
+	@echo ... p2
 	@echo ... src/list.obj
 	@echo ... src/list.i
 	@echo ... src/list.s

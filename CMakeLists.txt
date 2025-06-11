@@ -11,10 +11,10 @@ add_executable(p1
         src/utils.c
 )
 
-add_executable(car_inventory
+add_executable(p2
         src/p2.c
         src/utils.c
         src/year_list.c
-        src/tree/mil_tree.c
-        src/tree/price_tree.c
+        src/mil_tree.c
+        src/price_tree.c
 )

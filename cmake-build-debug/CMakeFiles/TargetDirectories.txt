@@ -1,4 +1,4 @@
 C:/Users/Deborah/CLionProjects/car_manager/cmake-build-debug/CMakeFiles/p1.dir
-C:/Users/Deborah/CLionProjects/car_manager/cmake-build-debug/CMakeFiles/car_inventory.dir
+C:/Users/Deborah/CLionProjects/car_manager/cmake-build-debug/CMakeFiles/p2.dir
 C:/Users/Deborah/CLionProjects/car_manager/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/Deborah/CLionProjects/car_manager/cmake-build-debug/CMakeFiles/rebuild_cache.dir
