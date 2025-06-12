@@ -15,6 +15,6 @@ add_executable(p2
         src/p2.c
         src/utils.c
         src/year_list.c
-        src/mil_tree.c
-        src/price_tree.c
+        src/tree/bst_mileage.c
+        src/tree/bst_price.c
 )
