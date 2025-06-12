@@ -39,9 +39,6 @@ MileageTree* insertNodeKm(MileageTree* root, int key, Car* car) {
 
     return root;
 }
-#include <stdio.h>
-#include <stdlib.h>
-#include "../include/mil_tree.h"
 
 // Function to search cars by mileage range
 void searchMileage(MileageTree* root, int min, int max) {
