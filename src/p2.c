@@ -9,13 +9,13 @@
 // Function to display all cars
 void displayAllCars(Car* cars, int count) {
     printf("\nDisplaying all cars:\n");
-    printf("---------------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------\n");
     printf("| %-15s | %-15s | %-6s | %-10s | %-12s |\n", "Brand", "Model", "Year", "Mileage", "Price");
-    printf("---------------------------------------------------------------\n");
+    printf("-------------------------------------------------------------------------\n");
     for (int i = 0; i < count; i++) {
-        printf("| %-15s | %-15s | %-6d | %-10d | %-12.2f |\n", cars[i].brand, cars[i].model, cars[i].year, cars[i].km, cars[i].price);
+        printf("| %-15s | %-15s | %-6d | %-10d | $%-12.2f |\n", cars[i].brand, cars[i].model, cars[i].year, cars[i].km, cars[i].price);
     }
-    printf("---------------------------------------------------------------\n");
+    printf("--------------------------------------------------------------------------\n");
 }
 
 // Function to convert a string to lowercase

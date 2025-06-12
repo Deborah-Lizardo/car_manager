@@ -70,7 +70,7 @@ void printPriceTree(PriceTree* root) {
         printPriceTree(root->left); // Visit the left subtree
 
         // Displaying the car information in a nicely formatted table
-        printf("| %-15s | %-15s | %-6d | %-10d | %-12.2f |\n", root->car->brand, root->car->model, root->car->year, root->car->km, root->price);
+        printf("| %-15s | %-15s | %-6d | %-10d | $%-12.2f |\n", root->car->brand, root->car->model, root->car->year, root->car->km, root->price);
 
         printPriceTree(root->right); // Visit the right subtree
     }

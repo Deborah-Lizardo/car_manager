@@ -72,9 +72,9 @@ YearNode* insertYear(YearNode* list, int year, Car* car) {
 // Function to display cars from a certain year or greater
 void displayCarsFromYear(YearNode* list, int minYear) {
     printf("\nDisplaying cars from year %d or later:\n", minYear);
-    printf("----------------------------------------------------------------------------------\n");
+    printf("---------------------------------------------------------------------------\n");
     printf("| %-15s | %-15s | %-6s | %-10s | %-12s |\n", "Brand", "Model", "Year", "Mileage", "Price");
-    printf("----------------------------------------------------------------------------------\n");
+    printf("---------------------------------------------------------------------------\n");
 
     int found = 0; // Flag to check if any car is found for the given year or later
 
@@ -85,7 +85,7 @@ void displayCarsFromYear(YearNode* list, int minYear) {
             YearCarNode* node = list->CarList;
             while (node != NULL) {
                 Car* c = node->car;
-                printf("| %-15s | %-15s | %-6d | %-10d | %-12.2f |\n", c->brand, c->model, c->year, c->km, c->price);
+                printf("| %-15s | %-15s | %-6d | %-10d | $%-12.2f |\n", c->brand, c->model, c->year, c->km, c->price);
                 node = node->next;
                 found = 1; // Car found
             }
@@ -97,7 +97,7 @@ void displayCarsFromYear(YearNode* list, int minYear) {
     if (!found) {
         printf("No cars found from year %d or later.\n", minYear);
     }
-    printf("----------------------------------------------------------------------------------\n");
+    printf("---------------------------------------------------------------------------\n");
 }
 
 // Function to free the allocated memory for the year list
