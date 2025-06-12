@@ -5,26 +5,62 @@
 #include "../include/year_list.h"
 #include "../include/mil_tree.h"
 #include "../include/price_tree.h"
-
+#include <ctype.h>
+// Function to display all cars
 void displayAllCars(Car* cars, int count) {
+    printf("\nDisplaying all cars:\n");
+    printf("---------------------------------------------------------------\n");
+    printf("| %-15s | %-15s | %-6s | %-10s | %-12s |\n", "Brand", "Model", "Year", "Mileage", "Price");
+    printf("---------------------------------------------------------------\n");
     for (int i = 0; i < count; i++) {
-        printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
-               cars[i].brand, cars[i].model, cars[i].year, cars[i].km, cars[i].price);
+        printf("| %-15s | %-15s | %-6d | %-10d | %-12.2f |\n", cars[i].brand, cars[i].model, cars[i].year, cars[i].km, cars[i].price);
+    }
+    printf("---------------------------------------------------------------\n");
+}
+
+// Function to convert a string to lowercase
+void toLower(char* str) {
+    for (int i = 0; str[i]; i++) {
+        str[i] = tolower((unsigned char)str[i]);
     }
 }
 
+// Function to display cars filtered by model (case-insensitive) and sorted by price
 void displayCarsByModel(Car* cars, int count, const char* substring) {
-    // Displays cars whose model contains the substring, sorted by price
     int* indices = malloc(count * sizeof(int));
+    if (indices == NULL) {
+        printf("Memory allocation error\n");
+        return;
+    }
+
     int matchCount = 0;
 
+    // Convert the substring to lowercase
+    char lowerSubstring[100];
+    strcpy(lowerSubstring, substring);
+    toLower(lowerSubstring);
+
+    // Filter the cars that contain the substring in the model (case-insensitive)
     for (int i = 0; i < count; i++) {
-        if (strstr(cars[i].model, substring) != NULL) {
+        // Copy the car model and convert it to lowercase
+        char lowerModel[100];
+        strcpy(lowerModel, cars[i].model);
+        toLower(lowerModel);
+
+        // Check if the model contains the substring (case-insensitive)
+        if (strstr(lowerModel, lowerSubstring) != NULL) {
             indices[matchCount++] = i;
         }
     }
 
-    // Sort the matches by price (simple bubble sort)
+    // Check if no cars matched
+    if (matchCount == 0) {
+        printf("No cars found with the model containing the substring \"%s\"\n", substring);
+        free(indices);  // Free memory before returning
+        return;
+    }
+
+    // Sort the matching cars by price (non-decreasing order)
     for (int i = 0; i < matchCount - 1; i++) {
         for (int j = 0; j < matchCount - i - 1; j++) {
             if (cars[indices[j]].price > cars[indices[j + 1]].price) {
@@ -35,19 +71,23 @@ void displayCarsByModel(Car* cars, int count, const char* substring) {
         }
     }
 
-    if (matchCount == 0) {
-        printf("No cars found with model containing \"%s\".\n", substring);
-    } else {
-        for (int i = 0; i < matchCount; i++) {
-            int idx = indices[i];
-            printf("Brand: %s | Model: %s | Year: %d | Mileage: %d | Price: %.2f\n",
-                   cars[idx].brand, cars[idx].model, cars[idx].year, cars[idx].km, cars[idx].price);
-        }
+    // Display the filtered and sorted cars
+    printf("| %-10s | %-10s | %-4s | %-8s | %-8s |\n", "Brand", "Model", "Year", "Km", "Price");
+    printf("-------------------------------------------------------------\n");
+
+    for (int i = 0; i < matchCount; i++) {
+        int idx = indices[i];
+        printf("| %-10s | %-10s | %-4d | %-8d | R$%-7.2f |\n",
+            cars[idx].brand, cars[idx].model, cars[idx].year, cars[idx].km, cars[idx].price);
     }
 
+    printf("-------------------------------------------------------------\n");
+
+    // Free the allocated memory for indices
     free(indices);
 }
 
+// Main function
 int main(int argc, char* argv[]) {
     if (argc != 2) {
         printf("Usage: %s <binary_file>\n", argv[0]);
@@ -66,18 +106,19 @@ int main(int argc, char* argv[]) {
     fread(cars, sizeof(Car), count, file);
     fclose(file);
 
-    // Data structures
+    // Data structures for trees
     YearNode* yearList = NULL;
     MileageTree* kmTree = NULL;
     PriceTree* priceTree = NULL;
 
+    // Populate trees with car data
     for (int i = 0; i < count; i++) {
         yearList = insertYear(yearList, cars[i].year, &cars[i]);
         kmTree = insertNodeKm(kmTree, cars[i].km, &cars[i]);
         priceTree = insertPriceNode(priceTree, cars[i].price, &cars[i]);
     }
 
-    // INTERACTIVE MENU
+    // Interactive menu
     int option;
     do {
         printf("\nMenu:\n");
@@ -89,44 +130,50 @@ int main(int argc, char* argv[]) {
         printf("6. Exit\n");
         printf("Choose an option: ");
         scanf("%d", &option);
-        getchar();  // consume '\n'
+        getchar();  // Consume '\n' after integer input
 
         if (option == 1) {
             displayAllCars(cars, count);
+
         } else if (option == 2) {
             char substring[50];
             printf("Enter part of the model name: ");
             fgets(substring, sizeof(substring), stdin);
-            substring[strcspn(substring, "\n")] = '\0';  // remove '\n'
+            substring[strcspn(substring, "\n")] = '\0';  // Remove trailing newline
             displayCarsByModel(cars, count, substring);
+
         } else if (option == 3) {
             int minYear;
             printf("Enter minimum year: ");
             scanf("%d", &minYear);
             displayCarsFromYear(yearList, minYear);
+
         } else if (option == 4) {
             int minKm, maxKm;
             printf("Enter minimum mileage: ");
             scanf("%d", &minKm);
             printf("Enter maximum mileage: ");
             scanf("%d", &maxKm);
-            search(kmTree, minKm, maxKm);
+            searchMileage(kmTree, minKm, maxKm);  // Calls the mileage search
+
         } else if (option == 5) {
             float minPrice, maxPrice;
             printf("Enter minimum price: ");
             scanf("%f", &minPrice);
             printf("Enter maximum price: ");
             scanf("%f", &maxPrice);
-            searchPriceInterval(priceTree, minPrice, maxPrice);
+            searchPrice(priceTree, minPrice, maxPrice);  // Calls the price search
+
         } else if (option == 6) {
             printf("Exiting program...\n");
+
         } else {
             printf("Invalid option.\n");
         }
 
     } while (option != 6);
 
-    // Free memory
+    // Freeing memory
     free(cars);
     freeYearList(yearList);
     freeKmTree(kmTree);

@@ -14,8 +14,7 @@ typedef struct MileageTree {
 
 // Functions
 MileageTree* insertNodeKm(MileageTree* root, int key,  Car* car);
-void searchIntervalKm(MileageTree* root, int min, int max, int* found);
+void searchMileage(MileageTree* root, int min, int max);
 void freeKmTree(MileageTree* root);
-void search(MileageTree* root, int min, int max);
-
+void checkIfFoundMileage(int found);
 #endif
