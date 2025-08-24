@@ -34,8 +34,6 @@ void displayCarsByModel(Car* cars, int count, const char* substring) {
     }
 
     int matchCount = 0;
-
-    // Convert the substring to lowercase
     char lowerSubstring[100];
     strcpy(lowerSubstring, substring);
     toLower(lowerSubstring);
@@ -82,8 +80,6 @@ void displayCarsByModel(Car* cars, int count, const char* substring) {
     }
 
     printf("-------------------------------------------------------------\n");
-
-    // Free the allocated memory for indices
     free(indices);
 }
 

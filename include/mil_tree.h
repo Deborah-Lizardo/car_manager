@@ -12,7 +12,6 @@ typedef struct MileageTree {
     struct MileageTree* right;
 } MileageTree;
 
-// Functions
 MileageTree* insertNodeKm(MileageTree* root, int key,  Car* car);
 void searchMileage(MileageTree* root, int min, int max);
 void freeKmTree(MileageTree* root);
